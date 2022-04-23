@@ -1,0 +1,16 @@
+<h1>LIST</h1>
+
+<%# afficher liste des listes, avec liens vers show de chacune des listes + bouton vers new d'une liste %>
+<div class="container">
+  <%# <div class="col-sm-8 col-sm-offset-2"> %>
+
+  <% @lists.each do |list| %>
+
+  <h2> <%= link_to list.name, list_path(list) %></h2>
+
+  <% end %>
+
+  <%= link_to "NEW LIST", new_list_path %>
+
+  </div>
+</div>

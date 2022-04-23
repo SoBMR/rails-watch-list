@@ -1,0 +1,7 @@
+<h1>NEW</h1>
+
+<%# déclenche le create %>
+<%= simple_form_for [ @list ] do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "List", class: "btn btn-primary" %>
+<% end %>
