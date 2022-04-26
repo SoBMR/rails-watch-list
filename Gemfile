@@ -56,3 +56,7 @@ gem "simple_form", github: "heartcombo/simple_form"
 
 # The Gem to keep my secrets
 gem 'dotenv-rails', groups: [:development, :test]
+
+# The Gem for Cloudinary
+gem 'cloudinary', '~> 1.16.0'
+
