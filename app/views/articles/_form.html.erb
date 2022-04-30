@@ -3,23 +3,10 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <%# <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @article.photos.key, height: 300, crop: :fill %>')">
-  <%# Cool article
-</div> %>
-
-  <%# cl_image_tag("front_face.png", :secure=>true, :transformation=>[
-  {:width=>150, :height=>150, :gravity=>"face", :crop=>"thumb"},
-  {:radius=>20},
-  {:effect=>"sepia"},
-  {:overlay=>"cloudinary_icon_blue", :gravity=>"south_east", :x=>5, :y=>5, :width=>50, :opacity=>60, :effect=>"brightness:200"},
-  {:angle=>10}
-  ])
- %>
-
   <div class="form-inputs">
     <%= f.input :title %>
     <%= f.input :body %>
-    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+    <%= f.input :photo, as: :file %>
   </div>
 
   <div class="form-actions">
